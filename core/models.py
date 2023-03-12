@@ -5,6 +5,7 @@ class Productos(models.Model):
     codigo=models.AutoField(primary_key=True)
     nombre=models.CharField(max_length=100)
     precio=models.DecimalField(max_digits=7,decimal_places=2)
+    precio_descuento=models.DecimalField(max_digits=7,decimal_places=2,blank=True,null=True)
     descripcion=models.TextField()
     proveedor=models.CharField(max_length=100)
     beneficios=models.TextField()
